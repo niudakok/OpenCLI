@@ -10,11 +10,6 @@ columns: [nickname, red_id, fans, follows, notes, likes_collected]
 pipeline:
   - navigate: https://www.xiaohongshu.com/user/profile/self
   - wait: 3
-  - tap:
-      store: user
-      action: fetchSelfProfile
-      capture: user/selfprofile
-      timeout: 8
   - evaluate: |
       (() => {
         const app = document.querySelector('#app')?.__vue_app__;
