@@ -189,19 +189,21 @@ for (const [, cmd] of registry) {
     const actionOpts = actionArgs[positionalArgs.length] ?? {};
     const startTime = Date.now();
     const kwargs: Record<string, any> = {};
+    
     // Collect positional args
     for (let i = 0; i < positionalArgs.length; i++) {
       const arg = positionalArgs[i];
       const v = actionArgs[i];
-      if (v !== undefined) kwargs[arg.name] = coerce(v, arg.type ?? 'str');
-      else if (arg.default != null) kwargs[arg.name] = arg.default;
+      if (v !== undefined) kwargs[arg.name] = v;
     }
+    
     // Collect named options
     for (const arg of cmd.args) {
       if (arg.positional) continue;
-      const v = actionOpts[arg.name]; if (v !== undefined) kwargs[arg.name] = coerce(v, arg.type ?? 'str');
-      else if (arg.default != null) kwargs[arg.name] = arg.default;
+      const v = actionOpts[arg.name]; 
+      if (v !== undefined) kwargs[arg.name] = v;
     }
+
     try {
       if (actionOpts.verbose) process.env.OPENCLI_VERBOSE = '1';
       let result: any;
@@ -224,13 +226,6 @@ for (const [, cmd] of registry) {
       process.exitCode = 1; 
     }
   });
-}
-
-function coerce(v: any, t: string): any {
-  if (t === 'bool') return ['1', 'true', 'yes', 'on'].includes(String(v).toLowerCase());
-  if (t === 'int') return parseInt(String(v), 10);
-  if (t === 'float') return parseFloat(String(v));
-  return String(v);
 }
 
 program.parse();
