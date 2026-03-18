@@ -156,7 +156,7 @@ npm install -g @jackwener/opencli@latest
 | **codex** | `status` `send` `read` `new` `extract-diff` `model` `ask` `screenshot` `history` `export` | 🖥️ 桌面端 |
 | **chatwise** | `status` `new` `send` `read` `ask` `model` `history` `export` `screenshot` | 🖥️ 桌面端 |
 | **notion** | `status` `search` `read` `new` `write` `sidebar` `favorites` `export` | 🖥️ 桌面端 |
-| **discord** | `status` `send` `read` `channels` `servers` `search` `members` | 🖥️ 桌面端 |
+| **discord-app** | `status` `send` `read` `channels` `servers` `search` `members` | 🖥️ 桌面端 |
 | **v2ex** | `hot` `latest` `topic` `daily` `me` `notifications` | 🌐 / 🔐 |
 | **xueqiu** | `feed` `hot-stock` `hot` `search` `stock` `watchlist` | 🔐 浏览器 |
 | **antigravity** | `status` `send` `read` `new` `evaluate` | 🖥️ 桌面端 |

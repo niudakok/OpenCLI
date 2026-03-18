@@ -2,7 +2,7 @@ import { cli, Strategy } from '../../registry.js';
 import type { IPage } from '../../types.js';
 
 export const sendCommand = cli({
-  site: 'discord',
+  site: 'discord-app',
   name: 'send',
   description: 'Send a message in the active Discord channel',
   domain: 'localhost',

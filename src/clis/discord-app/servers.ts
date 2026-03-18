@@ -2,7 +2,7 @@ import { cli, Strategy } from '../../registry.js';
 import type { IPage } from '../../types.js';
 
 export const serversCommand = cli({
-  site: 'discord',
+  site: 'discord-app',
   name: 'servers',
   description: 'List all Discord servers (guilds) in the sidebar',
   domain: 'localhost',

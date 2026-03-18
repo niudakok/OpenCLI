@@ -2,7 +2,7 @@ import { cli, Strategy } from '../../registry.js';
 import type { IPage } from '../../types.js';
 
 export const membersCommand = cli({
-  site: 'discord',
+  site: 'discord-app',
   name: 'members',
   description: 'List online members in the current Discord channel',
   domain: 'localhost',

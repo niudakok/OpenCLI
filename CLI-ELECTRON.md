@@ -122,4 +122,4 @@ Core techniques:
 | Cursor | 9226 | CDP |
 | ChatWise | 9228 | CDP |
 | Notion | 9230 | CDP |
-| Discord | 9232 | CDP |
+| Discord App | 9232 | CDP |

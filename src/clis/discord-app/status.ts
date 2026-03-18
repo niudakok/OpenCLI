@@ -2,7 +2,7 @@ import { cli, Strategy } from '../../registry.js';
 import type { IPage } from '../../types.js';
 
 export const statusCommand = cli({
-  site: 'discord',
+  site: 'discord-app',
   name: 'status',
   description: 'Check active CDP connection to Discord Desktop',
   domain: 'localhost',

@@ -155,7 +155,7 @@ Run `opencli list` for the live registry.
 | **codex** | `status` `send` `read` `new` `extract-diff` `model` `ask` `screenshot` `history` `export` | 🖥️ Desktop |
 | **chatwise** | `status` `new` `send` `read` `ask` `model` `history` `export` `screenshot` | 🖥️ Desktop |
 | **notion** | `status` `search` `read` `new` `write` `sidebar` `favorites` `export` | 🖥️ Desktop |
-| **discord** | `status` `send` `read` `channels` `servers` `search` `members` | 🖥️ Desktop |
+| **discord-app** | `status` `send` `read` `channels` `servers` `search` `members` | 🖥️ Desktop |
 | **v2ex** | `hot` `latest` `topic` `daily` `me` `notifications` | 🌐 / 🔐 |
 | **xueqiu** | `feed` `hot-stock` `hot` `search` `stock` `watchlist` | 🔐 Browser |
 | **antigravity** | `status` `send` `read` `new` `evaluate` | 🖥️ Desktop |

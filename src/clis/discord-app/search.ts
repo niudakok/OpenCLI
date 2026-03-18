@@ -2,7 +2,7 @@ import { cli, Strategy } from '../../registry.js';
 import type { IPage } from '../../types.js';
 
 export const searchCommand = cli({
-  site: 'discord',
+  site: 'discord-app',
   name: 'search',
   description: 'Search messages in the current Discord server/channel (Cmd+F)',
   domain: 'localhost',

@@ -2,7 +2,7 @@ import { cli, Strategy } from '../../registry.js';
 import type { IPage } from '../../types.js';
 
 export const channelsCommand = cli({
-  site: 'discord',
+  site: 'discord-app',
   name: 'channels',
   description: 'List channels in the current Discord server',
   domain: 'localhost',

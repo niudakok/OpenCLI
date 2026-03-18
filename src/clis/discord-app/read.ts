@@ -2,7 +2,7 @@ import { cli, Strategy } from '../../registry.js';
 import type { IPage } from '../../types.js';
 
 export const readCommand = cli({
-  site: 'discord',
+  site: 'discord-app',
   name: 'read',
   description: 'Read recent messages from the active Discord channel',
   domain: 'localhost',
